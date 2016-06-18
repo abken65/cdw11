@@ -138,6 +138,7 @@ app.register_blueprint(users.a.g3.ag3_40323108.ag3_40323108)
 app.register_blueprint(users.a.g3.ag3_40323108_task2bacd.ag3_40323108bacd)
 app.register_blueprint(users.a.g3.ag3_40323108_task3abcd.ag3_40323108task3)
 app.register_blueprint(users.b.g9.bg9_40323250.bg9_40323250)
+app.register_blueprint(users.a.g10.a40323115_1.a40323115_1)
 
 app.register_blueprint(users.a.g4.ag4_40323109.ag4_40323109)
 app.register_blueprint(users.a.g4.ag4_40323109_task2bacd.ag4_40323109bacd)
@@ -398,6 +399,7 @@ import users.a.g3.ag3_40323108_task3abcd
 import users.a.g4.ag4_40323109
 import users.a.g4.ag4_40323109_task2bacd
 import users.a.g4.ag4_40323109_task3abcd
+import users.a.g10.a40323115_1
 #bg1
 import users.b.g1.bg1_40123156
 import users.b.g1.bg1_40123156_2
@@ -1643,7 +1645,7 @@ def spur(cx, cy, m, n, pa, theta):
     # 接著繪製齒輪的基準線
     deg = math.pi/180
     Line = cobj(['M', cx, cy, 'L', cx+pr*math.cos(theta*deg), cy+pr*math.sin(theta*deg)], "PATH", {
-          'strokeColor':'red', 'lineWidth': 5})
+          'strokeColor':'blue', 'lineWidth': 5})
     cgo.render(Line)
  
 # 3個齒輪的齒數

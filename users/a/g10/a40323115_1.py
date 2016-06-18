@@ -858,7 +858,7 @@ def spur(cx, cy, m, n, pa, theta):
     # 接著繪製齒輪的基準線
     deg = math.pi/180
     Line = cobj(['M', cx, cy, 'L', cx+pr*math.cos(theta*deg), cy+pr*math.sin(theta*deg)], "PATH", {
-          'strokeColor':'red', 'lineWidth': 5})
+          'strokeColor':'blue', 'lineWidth': 5})
     cgo.render(Line)
  
 # 3個齒輪的齒數
